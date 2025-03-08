@@ -8,4 +8,4 @@
 the quality off source code and deploy to a server
 
 ### connect me via nguyenthanhkhoi1204@gmail.com
-#### &#169; 2025 
+#### &#169; 2025 Dysfunction
