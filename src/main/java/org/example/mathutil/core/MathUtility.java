@@ -12,17 +12,21 @@ public class MathUtility {
             //return -1;
             throw new IllegalArgumentException("Invalid n. n must be between 0 and 20");
         }
-        if(n == 0) {
-            return 1; //early return, thoát sớm nếu có thể!!!
+//        if(n == 0) {
+//            return 1; //early return, thoát sớm nếu có thể!!!
+//        }
+//        // khỏi viết else cho code nhìn đẹp
+//        //n bắt đầu từ 1...
+//        //thuật toán con heo đất, nhân dân, cộng dòn
+//        long result = 1;
+//        for (int i = 1; i <= n; i++) {
+//            result *= i;
+//        }
+//        return result;
+        if (n == 0 || n == 1) {
+            return 1;
         }
-        // khỏi viết else cho code nhìn đẹp
-        //n bắt đầu từ 1...
-        //thuật toán con heo đất, nhân dân, cộng dòn
-        long result = 1;
-        for (int i = 1; i <= n; i++) {
-            result *= i;
-        }
-        return result;
+        return n * getFactorial(n - 1);
     }
     // Test case #1
     //> Verify GetFactorial() with N = 0
